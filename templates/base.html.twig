@@ -1,17 +1,235 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
-        {% block stylesheets %}
-        {% endblock %}
+<html lang="fr">
 
-        {% block javascripts %}
-            {% block importmap %}{{ importmap('app') }}{% endblock %}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{appName}}
+		-
+		{% block title %}{% endblock %}
+	</title>
+
+	<!-- icofont-css-link -->
+	<link rel="stylesheet" href="{{asset('themes/base/css/icofont.min.css') }}">
+	<!-- Owl-Carosal-Style-link -->
+	<link rel="stylesheet" href="{{asset('themes/base/css/owl.carousel.min.css') }}">
+	<!-- Bootstrap-Style-link -->
+	<link rel="stylesheet" href="{{asset('themes/base/css/bootstrap.min.css') }}">
+	<!-- Aos-Style-link -->
+	<link rel="stylesheet" href="{{asset('themes/base/css/aos.css') }}">
+	<!-- Coustome-Style-link -->
+	<link rel="stylesheet" href="{{asset('themes/base/css/style.css') }}">
+	<link rel="stylesheet" href="{{asset('themes/base/css/custom.css') }}">
+	<!-- Responsive-Style-link -->
+	<link rel="stylesheet" href="{{asset('themes/base/css/responsive.css') }}">
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="{{ asset('themes/base/images/logo.png') }}" sizes="32x32" /> {%
+	block stylesheets %}{% endblock %}
+
+	{% block javascripts %}
+	{% block importmap %}
+	{{ importmap('app') }}
+	{% endblock %}
+	{% endblock %}
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16607452638"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'AW-16607452638');
+	</script>
+
+	<!-- Meta Pixel Code -->
+	<script>
+		!function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+				n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '1752463105503976');
+		fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+			src="https://www.facebook.com/tr?id=1752463105503976&ev=PageView&noscript=1" /></noscript>
+	<!-- End Meta Pixel Code -->
+
+	<script>
+		(function (w, d, s, o, f, js, fjs) {
+			w['FCObject'] = o; w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+			js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+			js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+		}(window, document, 'script', 'fc', 'https://tags.fullcontact.com/anon/fullcontact.js'));
+		var config = {
+			trackActivities: true,
+			callback: function (pid) {
+				// Add your js callback code here
+			}
+		};
+		fc('init', "oQfJ58tP66LuVdTqpbm0y6emVXHs190W", config);
+	</script>
+</head>
+
+<body data-turbo="false">
+
+	{% include "partials/base/_header.html.twig" %}
+
+	{% block banner %}{% endblock %}
+
+	<div class="page_wrapper"> {% block body %}{% endblock %}
+
+		<!-- Footer -->
+		{% include "partials/base/_footer.html.twig" %}
+
+	</div>
+
+	<!-- Jquery-js-Link -->
+	<script src="{{asset('themes/base/js/jquery.js') }}"></script>
+	<!-- owl-js-Link -->
+	<script src="{{asset('themes/base/js/owl.carousel.min.js') }}"></script>
+	<!-- bootstrap-js-Link -->
+	<script src="{{asset('themes/base/js/bootstrap.min.js') }}"></script>
+	<!-- aos-js-Link -->
+	<script src="{{asset('themes/base/js/aos.js') }}"></script>
+	<!-- Typed Js Cdn -->
+	<script src='{{asset(' themes/base/js/typed.min.js') }}'></script>
+	<!-- main-js-Link -->
+	<script src="{{asset('themes/base/js/main.js') }}"></script>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-KMZHE9PTQB"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-KMZHE9PTQB');
+	</script>
+
+	<script>
+		$("#typed").typed({
+			strings: [
+				"Bienvenue chez   {{ appName }}", "Chaque voyage est plus qu'un simple déplacement.", "La meilleure application pour recherche votre trajet."
+			],
+			typeSpeed: 100,
+			startDelay: 0,
+			backSpeed: 60,
+			backDelay: 2000,
+			loop: true,
+			cursorChar: "|",
+			contentType: 'html'
+		});
+
+		// Fixed Discount Dish JS
+		$(document).ready(function () {
+			let cardBlock = document.querySelectorAll('.task_block');
+			let topStyle = 120;
+
+			cardBlock.forEach((card) => {
+				card.style.top = `${topStyle}px`;
+				topStyle += 30;
+			})
+
+		});
+
+		// Scroll Down Window
+		$(document).ready(function () { // Attach a click event handler to the button
+			$('#scrollButton').click(function () { // Scroll down smoothly 200 pixels from the current position
+				$('html, body').animate({
+					scrollTop: $(window).scrollTop() + 600
+				}, 800); // Adjust the speed (800ms) as needed
+			});
+		});
+	</script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16607452638"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'AW-16607452638');
+	</script>
+	<script>
+		// public/js/cookie-consent.js
+		document.addEventListener("DOMContentLoaded", function () {
+			if (!getCookie('cookieConsent')) {
+				const consentPopup = document.createElement('div');
+				consentPopup.id = 'cookieConsent';
+				consentPopup.innerHTML = `
+            <p>Ce site utilise des cookies pour améliorer votre expérience. <a href="{{path('page_conditions')}}">En savoir plus</a>.</p>
+            <button id="acceptCookies" class="btn btn-primary">Accepter</button>
+            <button id="declineCookies" class="btn btn-primary">Rejeter</button>
+        `;
+				document.body.appendChild(consentPopup);
+
+				document.getElementById('acceptCookies').addEventListener('click', function () {
+					setCookie('cookieConsent', 'accepted', 365);
+					consentPopup.style.display = 'none';
+				});
+
+				document.getElementById('declineCookies').addEventListener('click', function () {
+					setCookie('cookieConsent', 'declined', 365);
+					consentPopup.style.display = 'none';
+				});
+			}
+		});
+
+		function setCookie(name, value, days) {
+			const date = new Date();
+			date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+			const expires = "expires=" + date.toUTCString();
+			document.cookie = name + "=" + value + ";" + expires + ";path=/";
+		}
+
+		function getCookie(name) {
+			const nameEQ = name + "=";
+			const ca = document.cookie.split(';');
+			for (let i = 0; i < ca.length; i++) {
+				let c = ca[i];
+				while (c.charAt(0) == ' ')
+					c = c.substring(1, c.length);
+
+				if (c.indexOf(nameEQ) == 0)
+					return c.substring(nameEQ.length, c.length);
+
+			}
+			return null;
+		}
+	</script>
+
+	<script>
+		document.querySelector(".download-app").addEventListener("click", function () {
+			const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+			// Check if the user is on an iOS device
+			if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+				window.location.href = "https://apps.apple.com/ma/app/rideeasy/id6499560290?l=fr-FR";
+			} 
+			// Check if the user is on an Android device
+			else if (/android/i.test(userAgent)) {
+				window.location.href = "https://play.google.com/store/apps/details?id=com.hlc.rideeasy";
+			} 
+			// Optional: handle other devices or display a message
+			else {
+				window.location.href = "https://play.google.com/store/apps/details?id=com.hlc.rideeasy";
+			}
+		});
+	</script>
+</body>
+
 </html>

@@ -1,0 +1,121 @@
+<!-- Footer-Section start -->
+<footer class="white_text" data-aos="fade-in" data-aos-duration="1500">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="logo_side">
+					<div class="logo">
+						<a href="{{path('accueil')}}">
+							<img src="{{asset('themes/base/images/logo.png') }}" alt="Logo">
+						</a>
+					</div>
+					<ul class="contact_info">
+						<li>
+							<a href="mailto:">{{appEmail}}</a>
+						</li>
+					</ul>
+					<ul class="social_media">
+						<li>
+							<a href="https://www.facebook.com/profile.php?id=61555652864989" target="_blank">
+								<i class="icofont-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://x.com/rideeasy_fr?mx=2" target="_blank">
+								<i class="icofont-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/rideeasy_fr?igsh=MTk0cHhrazJ2Y3ZvNQ%3D%3D&utm_source=qr" target="_blank">
+								<i class="icofont-instagram"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/company/ride-easy/" target="_blank">
+								<i class="icofont-linkedin"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.tiktok.com/@ride.easy?_t=8n97glptfOK&_r=1" target="_blank">
+								<i class="icofont-music-notes"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="download_side">
+					<h3>Télécharger l'application</h3>
+					<div class="d-none d-sm-block">
+						{% include "partials/base/_btn_store_footer.html.twig" %}
+					</div>
+
+					<div class="d-block d-sm-none">
+						{% include "partials/base/_btn_store_center.html.twig" %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer_bottom">
+		<div class="container-fluid">
+			<div class="ft_inner">
+				<div class="copy_text">
+					<p>© Copyrights 2024. Tous droits réservés.</p>
+				</div>
+				<ul class="links">
+					<li>
+						<a href="{{path('apropos')}}">A propos</a>
+					</li>
+					<li>
+						<a href="{{path('faqs')}}">FAQs</a>
+					</li>
+					<li>
+						<a href="{{path('page_conditions')}}">CGU & CGV</a>
+					</li>
+					<li>
+						<a href="{{path('page_mentions')}}">Mentions légales</a>
+					</li>
+					<li>
+						<a href="{{path('page_politique')}}">Politique de confidentialité</a>
+					</li>
+					<li>
+						<a href="{{path('page_chauffeur')}}">Chauffeur</a>
+					</li>
+					<li>
+						<a href="{{path('page_passager')}}">Passager</a>
+					</li>
+					<li>
+						<a href="{{path('contact')}}">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Footer-Section end -->
+
+<!-- go top button -->
+<div class="go_top" id="Gotop">
+	<span>
+		<i class="icofont-arrow-up"></i>
+	</span>
+</div>
+
+<!-- Video Model Start -->
+<div class="modal fade youtube-video" id="myModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<button id="close-video" type="button" class="button btn btn-default text-right" data-dismiss="modal">
+				<i class="icofont-close-line-circled"></i>
+			</button>
+			<div class="modal-body">
+				<div id="video-container" class="video-container">
+					<iframe id="youtubevideo" width="640" height="360" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="modal-footer"></div>
+		</div>
+	</div>
+</div>
+<!-- Video Model End -->

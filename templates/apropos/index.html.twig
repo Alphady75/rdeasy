@@ -1,0 +1,291 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}A propos de nous
+{% endblock %}
+
+{% block body %}
+
+<!-- About Us Section Start -->
+<section class="about_us_section">
+	<div class="container">
+		<div class="section_title" data-aos="fade-up" data-aos-duration="1500">
+			<span class="title_badge">À propos de nous</span>
+			<h2>Plus que des
+				<span>trajets</span>
+			</h2>
+			<p>Chez
+				<strong>{{appName}}</strong>, nous allons bien au-delà de la simple facilitation des déplacements de nos
+				utilisateurs. Notre application est disponible 7j/7 pour répondre à une variété de besoins, qu'il s'agisse de
+				déplacements quotidiens, de voyages d'affaires ou de sorties en famille. Nous nous engageons à fournir une
+				transparence totale, un confort optimal, une commodité maximale et une sécurité accrue pour tous nos trajets.
+			</p>
+		</div>
+	</div>
+	<div class="about_slider row_am" data-aos="fade-in" data-aos-duration="1500">
+		<div class="owl-carousel owl-theme" id="about_slider">
+			<div class="item">
+				<div class="abt_slides">
+					<img src="{{asset('img/0.png') }}" alt="image">
+				</div>
+			</div>
+			<div class="item">
+				<div class="abt_slides">
+					<img src="{{asset('img/1.png') }}" alt="image">
+				</div>
+			</div>
+			<div class="item">
+				<div class="abt_slides">
+					<img src="{{asset('img/2.png') }}" alt="image">
+				</div>
+			</div>
+			<div class="item">
+				<div class="abt_slides">
+					<img src="{{asset('img/section-2-1.png') }}" alt="image">
+				</div>
+			</div>
+			<div class="item">
+				<div class="abt_slides">
+					<img src="{{asset('img/section-2-2.png') }}" alt="image">
+				</div>
+			</div>
+			<div class="item">
+				<div class="abt_slides">
+					<img src="{{asset('img/trajet.png') }}" alt="image">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row abt_text" data-aos="fade-up" data-aos-duration="1500">
+			<div class="col-md-5">
+				<h2>
+					<span>Repenser la mobilité</span>
+					pour améliorer la vie de tous
+				</h2>
+			</div>
+			<div class="col-md-7">
+				<p>Chez
+					{{appName}}, nous avons pour mission de transformer la manière dont le monde se déplace. Nous sommes une
+					plateforme technologique de mobilité de premier plan, dédiée à faciliter les déplacements grâce à des
+					chauffeurs indépendants. Notre objectif est de simplifier et enrichir la vie de chacun, tout en offrant de
+					nouvelles opportunités de revenus flexibles aux propriétaires de voitures et chauffeurs indépendants.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- About Us Section End -->
+
+<!-- Why Choose Us Section Start -->
+<section class="why_choose row_am white_text" data-aos="fade-in" data-aos-duration="1500">
+	<div class="why_choose_inner">
+		<div class="dotes_blue"><img src="{{asset('themes/base/images/blue_dotes.png') }}" alt="image"></div>
+		<div class="container">
+			<div class="section_title" data-aos="fade-up" data-aos-duration="1500">
+				<span class="title_badge">Pourquoi nous choisir</span>
+				<h2>Statistiques de l'entreprise</h2>
+			</div>
+			<div class="company_statistics">
+				<ul class="app_statstic" id="counter" data-aos="fade-in" data-aos-duration="1500">
+					<li data-aos="fade-up" data-aos-duration="1500">
+						<div class="text">
+							<p>
+								<span class="counter-value" data-count="1">1</span>
+								<span>+</span>
+							</p>
+							<p>Pays</p>
+						</div>
+					</li>
+					<li data-aos="fade-up" data-aos-duration="1500">
+						<div class="text">
+							<p>
+								<span class="counter-value" data-count="100">100</span>
+								<span>+</span>
+							</p>
+							<p>Commentaires</p>
+						</div>
+					</li>
+					<li data-aos="fade-up" data-aos-duration="1500">
+						<div class="text">
+							<p>
+								<span class="counter-value" data-count="02">02
+								</span>
+								<span>K+</span>
+							</p>
+							<p>Suivis</p>
+						</div>
+					</li>
+					<li data-aos="fade-up" data-aos-duration="1500">
+						<div class="text">
+							<p>
+								<span class="counter-value" data-count="1">1</span>
+								<span>K+</span>
+							</p>
+							<p>Téléchargements</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Why Choose Us Section End -->
+
+<!-- Our Value Section Start -->
+<section class="our_value_section row_am">
+	<div class="container">
+		<div class="section_title" data-aos="fade-up" data-aos-duration="1500">
+			<span class="title_badge">Nos valeurs</span>
+			<h2>
+				<span>Nos valeurs</span>
+				chez Ride Easy
+			</h2>
+		</div>
+		<!-- Value Slider Start -->
+		<div class="value_slider" data-aos="fade-in" data-aos-duration="1500">
+			<div class="owl-carousel owl-theme" id="value_slider">
+				<div class="item">
+					<div class="value_block">
+						<div class="icon">
+							<img src="{{asset('themes/base/images/ourvalue_1.png') }}" alt="image">
+						</div>
+						<div class="text">
+							<h3>Création de valeur</h3>
+							<p>Nous nous efforçons de créer de la valeur pour nos clients en leur offrant un service exceptionnel.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="value_block">
+						<div class="icon">
+							<img src="{{asset('themes/base/images/ourvalue_2.png') }}" alt="image">
+						</div>
+						<div class="text">
+							<h3>Collaboration gagnant-gagnant
+							</h3>
+							<p>Nous croyons en une collaboration mutuellement bénéfique entre nos chauffeurs et notre entreprise.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="value_block">
+						<div class="icon">
+							<img src="{{asset('themes/base/images/ourvalue_3.png') }}" alt="image">
+						</div>
+						<div class="text">
+							<h3>Intégrité</h3>
+							<p>Nous agissons avec honnêteté et éthique dans toutes nos actions.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="value_block">
+						<div class="icon">
+							<img src="{{asset('themes/base/images/ourvalue_1.png') }}" alt="image">
+						</div>
+						<div class="text">
+							<h3>Croissance et Diversité</h3>
+							<p>Nous favorisons la croissance personnelle et professionnelle de nos chauffeurs et valorisons la
+								diversité au sein de notre communauté.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Value Slider End -->
+	</div>
+</section>
+<!-- Our Value Section End -->
+
+<!-- Text List flow Section Start -->
+<div class="text_list_section row_am" data-aos="fade-in" data-aos-duration="1500">
+	<div class="container">
+		<span class="title_badge down_fix">Pourquoi choisir notre application</span>
+	</div>
+	<div class="slider_block">
+		<div class="owl-carousel owl-theme" id="text_list_flow">
+			<div class="item">
+				<div class="text_block">
+					<span>Création de valeur
+					</span>
+					<span class="mark_star">•</span>
+				</div>
+			</div>
+			<div class="item">
+				<div class="text_block">
+					<span>Collaboration gagnant-gagnant</span>
+					<span class="mark_star">•</span>
+				</div>
+			</div>
+			<div class="item">
+				<div class="text_block">
+					<span>Intégrité
+					</span>
+					<span class="mark_star">•</span>
+				</div>
+			</div>
+			<div class="item">
+				<div class="text_block">
+					<span>Croissance et Diversité
+					</span>
+					<span class="mark_star">•</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Text List flow Section End -->
+
+<!-- Service Section Start -->
+{% include "apropos/composants/_service.html.twig" %}
+<!-- Service Section End -->
+
+<!-- FAQ Tab Section Start -->
+{% include "faqs/composants/_faqs.html.twig" %}
+<!-- FAQ Tab Section End -->
+
+<!-- App-Download-Section-Start -->
+<section class="row_am download_app"> <!-- Task Block start -->
+	<div class="task_block" data-aos="fade-up" data-aos-duration="1500">
+		<div class="dotes_blue"><img src="{{asset('themes/base/images/blue_dotes.png') }}" alt="image"></div>
+		<!-- row start -->
+		<div class="row">
+			<div class="col-md-6">
+				<!-- task text -->
+				<div class="task_text">
+					<div class="section_title white_text" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+						<span class="title_badge">Télécharger</span>
+						<h2>Notre application est disponible pour Android et iOS</h2>
+						<p>
+							Téléchargez notre Application Mobile.
+						</p>
+					</div>
+					<!-- app buttons -->
+					<div class="d-none d-sm-block mt-5" data-aos="fade-up" data-aos-duration="1500">
+						{% include "partials/base/_btn_store.html.twig" %}
+					</div>
+
+					<div class="d-block d-sm-none mt-5" data-aos="fade-up" data-aos-duration="1500">
+						{% include "partials/base/_btn_store_center.html.twig" %}
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<!-- task images -->
+				<div class="task_img" data-aos="fade-in" data-aos-duration="1500">
+					<div class="frame_img">
+						<img src="{{asset('img/section-1.png') }}" alt="image">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- row end -->
+	</div>
+	<!-- Task Block end -->
+</section>
+<!-- App-Download-Section-end -->
+
+{% endblock %}

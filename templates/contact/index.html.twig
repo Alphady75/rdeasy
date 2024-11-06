@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nous contacter{% endblock %}
+
+{% block body %}
+	<!-- Contact Us Section Start -->
+	<section class="contact_section">
+		<div class="container">
+			<div class="section_title" data-aos="fade-up" data-aos-duration="1500">
+				<span class="title_badge">Contactez-nous</span>
+				<h2>Une question ?
+					<span>parlons</span>
+				</h2>
+				<p>N'hésitez pas à nous contacter et nous vous répondrons dans les plus brefs délais.</p>
+			</div>
+			<ul class="contact_listing">
+				<li data-aos="fade-up" data-aos-duration="1500">
+					<span class="icon">
+						<img src="{{asset('themes/base/images/mail_icon.png') }}" alt="image">
+					</span>
+					<span class="lable">Envoyez-nous un email</span>
+					<a href="mailto:{{appEmail}}">{{appEmail}}</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- Contact Us Section End -->
+
+	<!-- Contact Form Section Start -->
+	<section class="contact_form white_text row_am" data-aos="fade-in" data-aos-duration="1500">
+		<div class="contact_inner">
+			<div class="container">
+				<div class="dotes_blue"><img src="{{asset('themes/base/images/blue_dotes.png') }}" alt="image"></div>
+				<div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+					<span class="title_badge">Contactez-nous</span>
+					<h2>Envoyez-nous un message</h2>
+					<p>Remplissez le formulaire ci-dessous, notre équipe vous répondra bientôt</p>
+				</div>
+				{% include "contact/_form.html.twig" %}
+			</div>
+		</div>
+	</section>
+	<!-- Contact Form Section End -->
+{% endblock %}

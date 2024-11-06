@@ -1,3 +1,85 @@
-body {
-    background-color: skyblue;
+:root {
+  --light-yellow: #fdf7ec;
+  --primary: #FD7B2D;
+  --dark-black: #181a22;
+  --dark-greay: #9599ab;
+  --black: #000000;
+  --text-white: #ffffff;
+  --bg-white: #ffffff;
+}
+.nav-item.active .nav-link{
+  color: var(--primary)!important;
+}
+.custom-btn{
+  background: #000000!important;
+  color: #ffffff!important;
+  border-radius: 8px!important;
+  padding: 6px 20px;
+  border: .5px solid #e6e6e6!important;
+  justify-content: center!important;
+}
+.custom-btn small{
+  font-size: 12px;
+  font-weight: 100;
+}
+.custom-btn .block{
+  padding-left: 10px;
+}
+.custom-btn p{
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+.custom-btn img{
+  width: 35px;
+}
+.m-right{
+  margin-right: 20px!important;
+}
+.how_it_inner .steps_block .icon span{
+  background-color: var(--primary)!important;
+  color: var(--text-white);
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 2em;
+  padding: 0;
+  line-height: 50px;
+}
+.contact_listing {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+/* public/css/cookie-consent.css */
+#cookieConsent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(20,20,20,0.9);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 9999;
+}
+
+#cookieConsent a {
+  color: #f1d600;
+  text-decoration: none;
+}
+
+#cookieConsent button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: var(--primary);
+  color: #000;
+  cursor: pointer;
+  border-radius: 25px;
+  font-weight: 400;
 }
